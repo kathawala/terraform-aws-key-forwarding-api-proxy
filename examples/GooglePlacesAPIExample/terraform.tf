@@ -1,5 +1,6 @@
 module "key_forwarding_api_proxy" {
-  source            = "../"
+  source            = "kathawala/key-forwarding-api-proxy/aws"
+  version           = "1.0.0"
   name              = var.name
   tags              = var.tags
   url               = var.external_api_url
