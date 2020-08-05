@@ -18,7 +18,8 @@ provider "aws" {
 }
 
 module "key_forwarding_api_proxy" {
-    source            = "./key-forwarding-api-proxy"
+    source            = "kathawala/key-forwarding-api-proxy/aws"
+    version           = "1.0.0"
     name              = "google-places-api-proxy"
     tags = {
        env = "staging"
